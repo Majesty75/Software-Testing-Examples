@@ -1,0 +1,128 @@
+{
+  "id": "7f1968d5-692c-442d-a0c6-8c446e06302d",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "https://www.amazon.in",
+  "tests": [{
+    "id": "8f63ee94-81cd-483f-a470-83532a653c09",
+    "name": "Product Search",
+    "commands": [{
+      "id": "d842563a-0414-446b-8ab0-4b3ba9eaa012",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed28b950-17a2-4291-b399-709190e69962",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6ea7f06-7332-4134-8b0f-2ca339800838",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e288fb54-3d03-46b0-a282-a4898df78df6",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "macbook pro m3"
+    }, {
+      "id": "9e3e37bc-8869-43d3-80a6-df85c29c7674",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5420fe6c-fce6-46e4-a916-6c6dc79b6ffe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/span[text()=\"2023 MacBook Air laptop with M2 chip: 38.91cm (15.3 inch) Liquid Retina display, 8GB RAM 256GB SSD storage, backlit keyboard, 1080p FaceTime HD camera,Touch ID. Works with iPhone/iPad; Starlight\"]",
+      "targets": [],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "productPage",
+      "windowTimeout": 2000
+    }, {
+      "id": "b2497d45-d764-4778-9ca5-a053274c24b5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47656ae1-031c-4269-8293-7d061a98b616",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${productPage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d98a8906-e8d2-43cf-82c1-fcd61f9d0ee9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1/span[text()=\"        Apple 2023 MacBook Air laptop with M2 chip: 38.91cm (15.3 inch) Liquid Retina display, 8GB RAM 256GB SSD storage, backlit keyboard, 1080p FaceTime HD camera,Touch ID. Works with iPhone/iPad; Starlight       \"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48d1d852-217e-421c-84f7-e28369c18c43",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa7b96d3-7367-443c-bbf9-ae348610344f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95963f70-0fed-4685-954d-283fb7cc3152",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "13baf604-82c7-41de-b4b6-1f94a45c38bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}

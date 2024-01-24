@@ -1,0 +1,81 @@
+{
+  "id": "eece90de-4225-468d-bff1-866a6a26e7f2",
+  "version": "2.0",
+  "name": "NITRIS",
+  "url": "https://eapplication.nitrkl.ac.in",
+  "tests": [{
+    "id": "72bd6d41-58a6-426f-89d2-97e8cc57e6ad",
+    "name": "Attachment Download",
+    "commands": [{
+      "id": "be8f77ef-429a-48e3-a8ce-dd27230f4ec5",
+      "comment": "",
+      "command": "open",
+      "target": "/nitris/Student/Home/Home.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45e81c7a-f44d-44e9-ac09-20f663e8df65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "850x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b6d2453-0231-4825-9a61-28af5ba7c12e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mdi-comment-processing",
+      "targets": [
+        ["css=.mdi-comment-processing", "css:finder"],
+        ["xpath=//a[@id='2']/i", "xpath:idRelative"],
+        ["xpath=//li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d45c30b-9d13-4e6e-b693-2eb0eba1877d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.message-item:nth-child(2) > .mail-contnet",
+      "targets": [
+        ["css=.message-item:nth-child(2) > .mail-contnet", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul[2]/li[2]/div/ul/li[2]/div/a[2]/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d5b4c99-1ef6-433d-a012-a562dddd049f",
+      "comment": "",
+      "command": "click",
+      "target": "id=ContentPlaceHolder2_hypPreview",
+      "targets": [
+        ["id=ContentPlaceHolder2_hypPreview", "id"],
+        ["linkText=View Attachment", "linkText"],
+        ["css=#ContentPlaceHolder2_hypPreview", "css:finder"],
+        ["xpath=//a[contains(text(),'View Attachment')]", "xpath:link"],
+        ["xpath=//a[@id='ContentPlaceHolder2_hypPreview']", "xpath:attributes"],
+        ["xpath=//div[@id='main-wrapper']/div/div[2]/div/div/div[5]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../docs/ReachYourStudent/1743293077775_Assignments_ST_Eq_Partitioning.docx')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Attachment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2c7e646-80bd-4e3c-8644-c4a1cd78bdae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4262908c-0ef2-4e35-9928-c390f35f4650",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["72bd6d41-58a6-426f-89d2-97e8cc57e6ad"]
+  }],
+  "urls": ["https://eapplication.nitrkl.ac.in/"],
+  "plugins": []
+}

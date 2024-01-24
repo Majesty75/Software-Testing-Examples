@@ -1,0 +1,118 @@
+{
+  "id": "d08076e3-9b6c-4b37-9c6f-9f47a4145448",
+  "version": "2.0",
+  "name": "IMD",
+  "url": "https://internal.imd.gov.in",
+  "tests": [{
+    "id": "018ec257-8aed-4e8e-b8c7-bd8ca3b29016",
+    "name": "Check Weather",
+    "commands": [{
+      "id": "b2610fd5-2336-494d-8e72-f7fd913cb2e9",
+      "comment": "",
+      "command": "open",
+      "target": "/pages/city_weather_main_mausam.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "971ddb6e-d04c-46bc-8823-68c54f27c962",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "845x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a656b1f9-cf92-4ec2-9ed7-e16ca7fbaba8",
+      "comment": "",
+      "command": "click",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=#menu1 > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//div[@id='menu1']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9de58b0-74de-4a97-8b48-3d5d4b3db15a",
+      "comment": "",
+      "command": "type",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=#menu1 > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//div[@id='menu1']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "42793rourkela"
+    }, {
+      "id": "1ab149ce-ec10-478e-8827-cea2a70971b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='menu1']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2622",
+      "windowTimeout": 2000
+    }, {
+      "id": "1b2a8cd1-0c87-41d5-bdcb-d53ad232d53f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f76ec4fd-d3b6-420e-9b7e-6b240ab48fef",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2622}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34f01159-a4d0-4e69-8abf-9665646691a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//font[@color=\"blue\"]",
+      "targets": [],
+      "value": "Rourkela"
+    }, {
+      "id": "2767cc2f-9642-428d-bbde-187b7399182f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6bc4d38-857d-430a-b734-246ccf900b22",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f96cce96-f338-480b-bfd8-a343ca682d5f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6f659f13-d0c1-4dba-8002-8a0984652605",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["018ec257-8aed-4e8e-b8c7-bd8ca3b29016"]
+  }],
+  "urls": ["https://internal.imd.gov.in/"],
+  "plugins": []
+}

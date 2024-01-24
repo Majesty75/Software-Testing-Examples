@@ -1,0 +1,56 @@
+{
+  "id": "725a1ce9-0209-44eb-b5c7-2d4d82cbc96a",
+  "version": "2.0",
+  "name": "Angular Material",
+  "url": "https://material.angular.io",
+  "tests": [{
+    "id": "c6267495-9475-4f6f-99db-ec38cec43a3b",
+    "name": "Drag N Drop",
+    "commands": [{
+      "id": "cde747e5-cdcb-4840-9646-53c8bd01a53f",
+      "comment": "",
+      "command": "open",
+      "target": "/cdk/drag-drop/examples",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ef46226-b76e-41ba-9b88-eeb2d262726d",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id=\"cdk-drop-list-0\"]//div[contains(., \"Pick up groceries\")]",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "c0444b5c-8dff-4387-a728-bea5215dcb81",
+      "comment": "",
+      "command": "echo",
+      "target": "${i}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bd1f4eb-c93f-4c78-9030-6f08694f5ea7",
+      "comment": "",
+      "command": "dragAndDropToObject",
+      "target": "xpath=//div[@id=\"cdk-drop-list-0\"]//div[contains(., \"Pick up groceries\")]",
+      "targets": [],
+      "value": "id=cdk-drop-list-1"
+    }, {
+      "id": "49e35e37-78b9-4c7d-8f49-96bed8bdecff",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a98b1067-1093-4d6e-afed-9f759a5a8358",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c6267495-9475-4f6f-99db-ec38cec43a3b"]
+  }],
+  "urls": ["https://material.angular.io/"],
+  "plugins": []
+}

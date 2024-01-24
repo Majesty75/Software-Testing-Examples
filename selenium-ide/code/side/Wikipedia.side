@@ -1,0 +1,98 @@
+{
+  "id": "463c4dd7-facc-4cac-bbbc-fafcd77b028d",
+  "version": "2.0",
+  "name": "Wikipedia",
+  "url": "https://en.wikipedia.org/",
+  "tests": [{
+    "id": "f77578d6-d152-447c-b948-7b7bfb9efd30",
+    "name": "Navigate Links",
+    "commands": [{
+      "id": "a42f56f9-7e0a-466f-8411-9223eb69fbab",
+      "comment": "",
+      "command": "open",
+      "target": "https://en.wikipedia.org/wiki/Main_Page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f86ccdc6-1dae-430b-8f79-4dd3895872db",
+      "comment": "",
+      "command": "times",
+      "target": "5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74055b49-bd71-4a6f-98eb-94a3b8174fb3",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=(//a)[contains(@href, \"en\")]",
+      "targets": [],
+      "value": "linkCount"
+    }, {
+      "id": "ad2b626f-4fbe-4349-bd07-c52a9f0c140d",
+      "comment": "",
+      "command": "echo",
+      "target": "${linkCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "185086ce-943f-4b15-b857-dabd06038af4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.floor(Math.random() * ${linkCount})",
+      "targets": [],
+      "value": "randomNumber"
+    }, {
+      "id": "b0fd34bf-ebf7-42db-94c2-0523914dae41",
+      "comment": "",
+      "command": "echo",
+      "target": "${randomNumber}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0740fef7-6c3d-44c9-a9dc-53cd35a39c5a",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=(//a[contains(@href, \"en\")])[${randomNumber}]",
+      "targets": [],
+      "value": "linkText"
+    }, {
+      "id": "f34d2a88-5f05-4d90-8523-3739e3947171",
+      "comment": "",
+      "command": "echo",
+      "target": "${linkText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "352e3211-e768-4f63-96b8-885da1fdb974",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, \"en\")])[${randomNumber}]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd8668b4-8d4f-4ef2-bf3a-0dd81a4000a9",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fe6db07-734b-49e2-b7d3-36698f7a3413",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0df7105c-021e-4d03-b34f-92096adfd11c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f77578d6-d152-447c-b948-7b7bfb9efd30"]
+  }],
+  "urls": ["https://en.wikipedia.org/"],
+  "plugins": []
+}

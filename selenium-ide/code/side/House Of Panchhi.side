@@ -1,0 +1,142 @@
+{
+  "id": "24653198-7c13-4886-bded-15c13cbd2efc",
+  "version": "2.0",
+  "name": "House Of Panchhi",
+  "url": "https://houseofpanchhi.com",
+  "tests": [{
+    "id": "3d0cf3c5-d243-44a9-ae6b-a2b5ccc20380",
+    "name": "View Lehengha",
+    "commands": [{
+      "id": "faa65962-e677-4485-8f82-11871a7c7b84",
+      "comment": "",
+      "command": "open",
+      "target": "/collections/lehenga",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a8b0131-fe8c-4247-be4e-54376855dd8f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3788ba2d-5a1b-4eca-8a1c-e9808b26ce94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid__item:nth-child(1) .grid-product__title",
+      "targets": [
+        ["css=.grid__item:nth-child(1) .grid-product__title", "css:finder"],
+        ["xpath=//div[@id='CollectionAjaxContent']/div/div/div[2]/div/div/div[2]/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15707ffb-7021-4249-a71b-ceb1c91525f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.animation-delay-6",
+      "targets": [
+        ["css=.animation-delay-6", "css:finder"],
+        ["xpath=//div[@id='ProductSection-template--16683063968002__main-8227250471170']/div/div/div/div/div/div/div[2]/div/div[2]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d221db-608a-49c5-8d54-37f82eb7d1d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.animation-delay-9",
+      "targets": [
+        ["css=.animation-delay-9", "css:finder"],
+        ["xpath=//div[@id='ProductSection-template--16683063968002__main-8227250471170']/div/div/div/div/div/div/div[2]/div/div[3]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "122f2c90-d48c-4ca5-af10-35603d19b269",
+      "comment": "",
+      "command": "click",
+      "target": "css=.animation-delay-12",
+      "targets": [
+        ["css=.animation-delay-12", "css:finder"],
+        ["xpath=//div[@id='ProductSection-template--16683063968002__main-8227250471170']/div/div/div/div/div/div/div[2]/div/div[4]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e5a8d70-9741-4a89-a9b5-2624034f7286",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ymq-attrib-item-1tem1_2 > .ymq-option-value",
+      "targets": [
+        ["css=.ymq-attrib-item-1tem1_2 > .ymq-option-value", "css:finder"],
+        ["xpath=//div[@id='option-box-1tem1']/div[2]/label[2]/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CUSTOMISE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "182694df-fa44-4706-9a4b-f14f72b6c060",
+      "comment": "",
+      "command": "click",
+      "target": "css=.variant-input > .color-swatch--lavender",
+      "targets": [
+        ["css=.variant-input > .color-swatch--lavender", "css:finder"],
+        ["xpath=//fieldset[@id='ProductSelect-template--16683063968002__main-8227250471170-option-0']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Lavender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90496c6e-63d3-435c-a725-a08cae9ece26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ymq-attrib-item-1tem2_2",
+      "targets": [
+        ["css=.ymq-attrib-item-1tem2_2", "css:finder"],
+        ["xpath=//div[@id='option-box-1tem2']/div[2]/label[3]", "xpath:idRelative"],
+        ["xpath=//label[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9dceaf-dc37-425b-b9b9-130b90a92453",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ymq-attrib-item-1tem3_3",
+      "targets": [
+        ["css=.ymq-attrib-item-1tem3_3", "css:finder"],
+        ["xpath=//div[@id='option-box-1tem3']/div[2]/label[3]", "xpath:idRelative"],
+        ["xpath=//div[12]/div[2]/label[3]", "xpath:position"],
+        ["xpath=//label[contains(.,'39\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b28d499-f43a-4505-b2b5-7e9b340d130d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-plus",
+      "targets": [
+        ["css=.icon-plus", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ab502fd-ebfe-40de-88c3-a3f55808265b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "de26beba-f5a5-464e-b0c7-bbfadab1b93d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d0cf3c5-d243-44a9-ae6b-a2b5ccc20380"]
+  }],
+  "urls": ["https://houseofpanchhi.com/"],
+  "plugins": []
+}

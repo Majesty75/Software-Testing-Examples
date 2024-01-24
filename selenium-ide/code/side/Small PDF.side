@@ -1,0 +1,72 @@
+{
+  "id": "6d64d492-0647-407c-b365-877a6b1fe153",
+  "version": "2.0",
+  "name": "Small PDF",
+  "url": "https://smallpdf.com",
+  "tests": [{
+    "id": "2e193574-a7aa-4cce-8d2e-e15cf582c45b",
+    "name": "Word to PDF",
+    "commands": [{
+      "id": "25be5e3a-1dd6-4be5-b712-3c9b3db2f80b",
+      "comment": "",
+      "command": "open",
+      "target": "/pdf-to-word",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88f215e5-0c04-4e75-9c06-7c537bba962e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "850x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5ef47b5-a31b-4fe0-996d-fb25efbd4131",
+      "comment": "",
+      "command": "click",
+      "target": "id=__picker-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32cec498-5eff-4013-b644-cd44c3320a3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=__picker-input",
+      "targets": [
+        ["css=form > input", "css:finder"],
+        ["xpath=(//input[@type='file'])[3]", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Yash\\Downloads\\Assignment 1 Equivalence Classes.docx"
+    }, {
+      "id": "272ee947-8224-4e14-848a-379d69e6b151",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kHOHNI .r5zwp6-3:nth-child(2)",
+      "targets": [
+        ["css=.kHOHNI .r5zwp6-3:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/button/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dbca584-8f33-48be-b26c-74d2b46a2916",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "08f6f717-4567-402f-9202-0c45440e9e7d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2e193574-a7aa-4cce-8d2e-e15cf582c45b"]
+  }],
+  "urls": ["https://smallpdf.com/"],
+  "plugins": []
+}

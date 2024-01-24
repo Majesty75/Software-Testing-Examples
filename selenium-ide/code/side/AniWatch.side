@@ -1,0 +1,138 @@
+{
+  "id": "0a199640-16d4-45fd-8ccf-5d3948a9fd13",
+  "version": "2.0",
+  "name": "AniWatch",
+  "url": "https://aniwatch.to",
+  "tests": [{
+    "id": "b2906f42-db1a-4b99-91c4-8459a55ef2fe",
+    "name": "Search N Play",
+    "commands": [{
+      "id": "7b894076-9152-44da-a8ed-e1e5238705c1",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a662a0-7cde-4f22-9c86-61a8cb6db5d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efb57846-504d-423b-be4b-f69a708d8cb5",
+      "comment": "",
+      "command": "click",
+      "target": "name=keyword",
+      "targets": [
+        ["name=keyword", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49052d61-d93e-414e-83a2-55eebd54aa8e",
+      "comment": "",
+      "command": "type",
+      "target": "name=keyword",
+      "targets": [
+        ["name=keyword", "name"],
+        ["css=.search-input", "css:finder"],
+        ["xpath=//input[@name='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jujutsu kaisen"
+    }, {
+      "id": "9652e76a-4241-4786-999a-dc1b2811ebc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-icon > .fas",
+      "targets": [
+        ["css=.search-icon > .fas", "css:finder"],
+        ["xpath=//div[@id='search']/div/form/button/i", "xpath:idRelative"],
+        ["xpath=//form/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8093929d-a813-419b-8412-c715a1eb0fb3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Jujutsu Kaisen 2nd Season",
+      "targets": [
+        ["linkText=Jujutsu Kaisen 2nd Season", "linkText"],
+        ["css=.flw-item:nth-child(1) .dynamic-name", "css:finder"],
+        ["xpath=//a[contains(text(),'Jujutsu Kaisen 2nd Season')]", "xpath:link"],
+        ["xpath=//div[@id='main-content']/section/div[3]/div/div/div/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/jujutsu-kaisen-2nd-season-18413?ref=search')])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Jujutsu Kaisen 2nd Season')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59b6855-5608-448b-8772-45cdf8b0c46b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Watch now",
+      "targets": [
+        ["linkText=Watch now", "linkText"],
+        ["css=.btn-play", "css:finder"],
+        ["xpath=//a[contains(text(),'Watch now')]", "xpath:link"],
+        ["xpath=//div[@id='ani_detail']/div/div/div[2]/div[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/watch/jujutsu-kaisen-2nd-season-18413')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watch now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "756d5c70-7964-4d87-b427-f8faf48b4c6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ssl-item:nth-child(17) .ep-name",
+      "targets": [
+        ["css=.ssl-item:nth-child(17) .ep-name", "css:finder"],
+        ["xpath=//div[@id='detail-ss-list']/div/div[2]/a[17]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a[17]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "911697ef-f91b-4056-a016-9fa82a953492",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "7182eeec-fbba-4d41-83b4-5f54c9d9b5ce",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd410e18-ff24-447c-945e-b688ea4e9cca",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "63aa0182-be6a-43c4-8a23-193b0c980826",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b2906f42-db1a-4b99-91c4-8459a55ef2fe"]
+  }],
+  "urls": ["https://aniwatch.to/"],
+  "plugins": []
+}

@@ -1,0 +1,158 @@
+{
+  "id": "ff6f86b6-fc6e-4da1-af0d-4db047f1a4d4",
+  "version": "2.0",
+  "name": "NITRKL.AC.IN",
+  "url": "https://www.nitrkl.ac.in",
+  "tests": [{
+    "id": "57031800-8b0c-46e3-a626-288d06cd49aa",
+    "name": "Curriculum Check",
+    "commands": [{
+      "id": "68716d7d-dd65-4c92-9d3a-48bf4680a551",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ef01b9b-f295-4d40-a8af-b1317ecbece1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9890a90-f697-40d6-82d8-c025a0e5646d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Academics",
+      "targets": [
+        ["linkText=Academics", "linkText"],
+        ["css=#tmenu-academic > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Academics')]", "xpath:link"],
+        ["xpath=//li[@id='tmenu-academic']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[4]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Academics')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c3ed519-9aba-47cc-b692-7a90ca35d038",
+      "comment": "",
+      "command": "click",
+      "target": "id=submenu-engineering",
+      "targets": [
+        ["id=submenu-engineering", "id"],
+        ["linkText=Engineering", "linkText"],
+        ["css=#submenu-engineering", "css:finder"],
+        ["xpath=//a[contains(text(),'Engineering')]", "xpath:link"],
+        ["xpath=//a[@id='submenu-engineering']", "xpath:attributes"],
+        ["xpath=//li[@id='tmenu-academic']/div/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Academic/Engineering')]", "xpath:href"],
+        ["xpath=//li[3]/div/ul/li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Engineering')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e4a4c5-0266-467a-a55a-f5b398f45c4f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,696)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c724ed8f-27df-41d4-a0d5-aac0dfd19906",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(5) h5",
+      "targets": [
+        ["css=.item:nth-child(5) h5", "css:finder"],
+        ["xpath=//div[5]/a/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Computer Science and Engineering')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f82b404d-aaec-43b6-80d7-e966181ad8d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tmenu-academic .submenu-indicator-chevron",
+      "targets": [
+        ["css=#tmenu-academic .submenu-indicator-chevron", "css:finder"],
+        ["xpath=//li[@id='tmenu-academic']/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6806c750-dde6-4319-b838-fae6bf58478e",
+      "comment": "",
+      "command": "click",
+      "target": "id=submenu-curiculum",
+      "targets": [
+        ["id=submenu-curiculum", "id"],
+        ["linkText=Curriculum & Syllabus", "linkText"],
+        ["css=#submenu-curiculum", "css:finder"],
+        ["xpath=//a[contains(text(),'Curriculum & Syllabus')]", "xpath:link"],
+        ["xpath=//a[@id='submenu-curiculum']", "xpath:attributes"],
+        ["xpath=//li[@id='tmenu-academic']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/CS/CuricullaSyllabi')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Curriculum & Syllabus')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e1d261-f371-493a-b250-4a1cc70fe6bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) a",
+      "targets": [
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View')])[4]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CS/Curriculum/35')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc4687e-889c-413a-8a45-a30005c059c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#flush-heading-2 > .accordion-button",
+      "targets": [
+        ["css=#flush-heading-2 > .accordion-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//h2[@id='flush-heading-2']/button", "xpath:idRelative"],
+        ["xpath=//div[4]/h2/button", "xpath:position"],
+        ["xpath=//button[contains(.,'2nd Semester')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11dd1f23-b641-41ae-b76a-e6fc914cf699",
+      "comment": "",
+      "command": "click",
+      "target": "css=#flush-2 tr:nth-child(3) a",
+      "targets": [
+        ["css=#flush-2 tr:nth-child(3) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Syllabus')])[7]", "xpath:link"],
+        ["xpath=//div[@id='flush-2']/div/div/table/tbody/tr[3]/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/CS/Syllabus/35?sid=6245')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/table/tbody/tr[3]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f150f681-ad72-41a0-8d39-98b8cf75aba8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e9bc6c9a-bce0-42dd-85cb-fd4cff50ffde",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57031800-8b0c-46e3-a626-288d06cd49aa"]
+  }],
+  "urls": ["https://www.nitrkl.ac.in/"],
+  "plugins": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "e8d032b6-f115-4118-97c1-1b502b69b40b",
+  "version": "2.0",
+  "name": "4. Zimbra",
+  "url": "https://mail.nitrkl.ac.in",
+  "tests": [{
+    "id": "7960a4b5-4827-40e7-a51a-db5dc10857e3",
+    "name": "Email Reading",
+    "commands": [{
+      "id": "ebb9b2ea-76ad-4539-aefc-0f48170126f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cc0f937-f7dc-4dec-88ee-e06fe2a54139",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "845x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90279588-a38b-4a61-9437-158bd0505258",
+      "comment": "",
+      "command": "click",
+      "target": "css=#zlif__CLV-main__-2408__su > span:nth-child(1)",
+      "targets": [
+        ["css=#zlif__CLV-main__-2408__su > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='zlif__CLV-main__-2408__su']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'NITRKL GroupMail: Circular: Common Potential Test (CPT) through National University of Singapore and InspirED Study')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8a50ff7-5103-4ead-b644-2bf6bd9bbfee",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "84145382-464e-4b7e-bf82-3992d4349517",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=https://app.inspiredstudy.com/register",
+      "targets": [
+        ["linkText=https://app.inspiredstudy.com/register", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'https://app.inspiredstudy.com/register')]", "xpath:link"],
+        ["xpath=//span[@id='OBJ_PREFIX_DWT49_com_zimbra_url']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://app.inspiredstudy.com/register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://app.inspiredstudy.com/register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7dab510-dad8-4cc2-9a3e-acd2048d8b0f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d0727fb-5154-48f6-96ed-0310e3d62058",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7960a4b5-4827-40e7-a51a-db5dc10857e3"]
+  }],
+  "urls": ["https://mail.nitrkl.ac.in/"],
+  "plugins": []
+}

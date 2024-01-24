@@ -1,0 +1,117 @@
+{
+  "id": "e01ccb06-a35c-4e4b-9022-bb56d179d7f8",
+  "version": "2.0",
+  "name": "NITR Network Access",
+  "url": "https://login.nitrkl.ac.in",
+  "tests": [{
+    "id": "6f7c1c49-3a22-4048-8381-cffdb1332436",
+    "name": "Login",
+    "commands": [{
+      "id": "730fb6fc-ae79-4d70-8ffe-10a004ea4e4b",
+      "comment": "",
+      "command": "open",
+      "target": "/PortalMain",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34078e2d-b322-4d0e-a830-3217d32751fb",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "//a[@id=\"UserCheck_Login_Button\"]",
+      "targets": [],
+      "value": "loginButtonCount"
+    }, {
+      "id": "0f7c4355-00da-4a49-942d-d9a4924a0ef0",
+      "comment": "",
+      "command": "echo",
+      "target": "login button count ${loginButtonCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6dec2ab-bcf0-42fb-98b5-b38319581763",
+      "comment": "",
+      "command": "if",
+      "target": "${loginButtonCount}>0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72671310-ffa2-4fec-bf99-50d994564f64",
+      "comment": "",
+      "command": "type",
+      "target": "id=LoginUserPassword_auth_username",
+      "targets": [
+        ["id=LoginUserPassword_auth_username", "id"],
+        ["css=#LoginUserPassword_auth_username", "css:finder"],
+        ["xpath=//input[@id='LoginUserPassword_auth_username']", "xpath:attributes"],
+        ["xpath=//table[@id='password_login']/tbody/tr[2]/td/table/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "a2e84a71-f64e-4a3b-8270-b94b32c04403",
+      "comment": "",
+      "command": "type",
+      "target": "id=LoginUserPassword_auth_password",
+      "targets": [
+        ["id=LoginUserPassword_auth_password", "id"],
+        ["css=#LoginUserPassword_auth_password", "css:finder"],
+        ["xpath=//input[@id='LoginUserPassword_auth_password']", "xpath:attributes"],
+        ["xpath=//table[@id='password_login']/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "e67608a7-d4be-44a6-8b08-4ea8c7632d9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=UserCheck_Login_Button_span",
+      "targets": [
+        ["id=UserCheck_Login_Button_span", "id"],
+        ["css=#UserCheck_Login_Button_span", "css:finder"],
+        ["xpath=//span[@id='UserCheck_Login_Button_span']", "xpath:attributes"],
+        ["xpath=//a[@id='UserCheck_Login_Button']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e73ee1-d29d-43b9-aae5-a673d8d118c9",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "836ccc1b-aa15-40fb-a5a9-e6d18b283322",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=UserCheck_Logoff_Button_span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b46b8d25-5408-4d25-a647-da96504c5293",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e70850ad-753b-42f9-9ab2-2b3b11859faf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b37404d5-ecd3-45e7-a026-dace1183d6bf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6f7c1c49-3a22-4048-8381-cffdb1332436"]
+  }],
+  "urls": ["https://login.nitrkl.ac.in/"],
+  "plugins": []
+}

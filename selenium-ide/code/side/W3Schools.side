@@ -1,0 +1,70 @@
+{
+  "id": "17b8f951-c0fb-4d0c-9d50-3de56918c0e4",
+  "version": "2.0",
+  "name": "W3Schools",
+  "url": "https://www.w3schools.com",
+  "tests": [{
+    "id": "35215ef5-dc77-449b-8cb4-929cd4bd6ecc",
+    "name": "Alert",
+    "commands": [{
+      "id": "ff80e564-8845-4424-a152-edb75471cc2a",
+      "comment": "",
+      "command": "open",
+      "target": "/jsref/tryit.asp?filename=tryjsref_alert",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f3690ea-2099-48ba-b230-3136eb84de43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9430fa5a-749f-47d6-9cd1-d0c811a3d8a6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b5a8605-deca-40bc-b808-e222a2222e3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='myFunction()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e855725-ed52-4957-8377-229b783901fd",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hello! I am an alert box!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be352059-b6be-4866-828d-d781b0f73002",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "13ee693e-8cd8-4337-8444-8e906c797477",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35215ef5-dc77-449b-8cb4-929cd4bd6ecc"]
+  }],
+  "urls": ["https://www.w3schools.com/"],
+  "plugins": []
+}
